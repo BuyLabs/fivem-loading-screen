@@ -1,26 +1,29 @@
 
-
 var count = 0;
-var thiscount = 0;
+var thisCount = 0;
 
-const handler = {
-    startInitFunctionOrder(order) {
-        count = data.count
-        },
-    initfunctioninvoking(data){
-        document.querySelector(".progressbar").style.left = "0%"
-        document.querySelector(".progressbar").style.width = ((data.idx / count) * 100) + "%"
-    },
-    startdatafileentries(data) {
+
+const handlers = {
+    startInitFunctionOrder(data) {
         count = data.count;
     },
-    performmaploadfunction(data) {
-        ++thiscount
-        document.querySelector(".progressbar").style.left = "0%"
-        document.querySelector(".progressbar").style.width = ((thiscount / count) * 100) + "%"
-    }
-}
 
-window.addEventListener("message", function(e){
-    (handler[e.data.evenname] || function () {})(e.data)
-})
+    initFunctionInvoking(data) {
+        document.querySelector('.progressBar').style.left = '0%';
+        document.querySelector('.progressBar').style.width = ((data.idx / count) * 100) + '%';
+    },
+
+    startDataFileEntries(data) {
+        count = data.count;
+    },
+
+    performMapLoadFunction(data) {
+        ++thisCount;
+        document.querySelector('.progressBar').style.left = '0%';
+        document.querySelector('.progressBar').style.width = ((thisCount / count) * 100) + '%';
+    },
+};
+
+window.addEventListener('message', function (e) {
+    (handlers[e.data.eventName] || function () { })(e.data);
+});
