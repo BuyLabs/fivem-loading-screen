@@ -3,13 +3,12 @@
         <meta name="veiwport" content="width+device-width,initial-scarle=1">
         <link rel="stylesheet" media="screen" href="main.css">
     </head>
-<audio controls volume="0.1" id="audio-example-low" class="audio-example" autoplay loop>
-  <!-- One or more source files, each referencing the same audio but in a different file format.
-    The browser will choose the first file which it is able to play. -->
-   <source src="song.mp3">
-    You will see this text if native audio playback is not supported.
-    <!-- You could use this fall-back feature to insert a JavaScript-based audio player. -->
-</audio>
+        </div>
+            <div id="audio">
+                <audio controls loop autoplay hidden volume volume="0.1">
+                <source src="song.mp3" type="audio/mp3">
+            </audio>
+        </div>
     <body class="bg">
         <div class="container">
             <img src="logo.png" alt="logo.png">
