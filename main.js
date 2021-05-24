@@ -24,4 +24,3 @@ const handler = {
 window.addEventListener("message", function(e){
     (handler[e.data.evenname] || function () {})(e.data)
 })
-
