@@ -40,3 +40,9 @@
     position: absolute;
     left: 10%;
 }
+
+.loadingtxt {
+position: absolute;
+font-size: 10px;
+color: black;
+}
