@@ -65,12 +65,12 @@
 }
 
 .about {
-color: deeppink;
-font-size: 40px;
+    color: deeppink;
+    font-size: 40px;
 
-position: fixed;
-bottom: 225px;
-right: 10px;
+    position: fixed;
+    bottom: 225px;
+    right: 10px;
 }
 
 .about-txt {
@@ -83,9 +83,9 @@ right: 10px;
 }
 
 .life {
-top: 10px;
-left: 50%;
-font-size: 50px;
-color: rgb:(255, 0, 0);
+    top: 10px;
+    left: 50%;
+    font-size: 50px;
+    color: rgb:(255, 0, 0);
 
 }
