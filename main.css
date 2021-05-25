@@ -3,6 +3,7 @@
     font-size: 30px;
 }
 
+
 .bg {
     background-color: rgb(0, 140, 255);
 }
@@ -10,7 +11,7 @@
 .container {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
 }
 
@@ -51,7 +52,7 @@
     font-size: 40px;
 
     position: fixed;
-    bottom: 140px;
+    bottom: 130px;
     left: 10px;
 }
 
@@ -65,12 +66,12 @@
 }
 
 .about {
-    color: deeppink;
-    font-size: 40px;
+color: deeppink;
+font-size: 40px;
 
-    position: fixed;
-    bottom: 225px;
-    right: 10px;
+position: fixed;
+bottom: 215px;
+right: 10px;
 }
 
 .about-txt {
@@ -83,9 +84,11 @@
 }
 
 .life {
-    top: 10px;
-    left: 50%;
-    font-size: 50px;
-    color: rgb:(255, 0, 0);
-
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    
+    position: fixed;
+    right: 38%;
+    top: 2%
+    font-style: italic;
 }
