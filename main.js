@@ -1,26 +1,14 @@
 
 
-var count = 0;
-var thiscount = 0;
+const progressbar = document.querySelector(".progress");
 
-const handler = {
-    startInitFunctionOrder(order) {
-        count = data.count
-        },
-    initfunctioninvoking(data){
-        document.querySelector(".progressbar").style.left = "0%"
-        document.querySelector(".progressbar").style.width = ((data.idx / count) * 100) + "%"
-    },
-    startdatafileentries(data) {
-        count = data.count;
-    },
-    performmaploadfunction(data) {
-        ++thiscount
-        document.querySelector(".progressbar").style.left = "0%"
-        document.querySelector(".progressbar").style.width = ((thiscount / count) * 100) + "%"
-    }
-}
+const changeProgress = (progress) => {
+  progressbar.style.width = `${progress}%`;
+};
 
-window.addEventListener("message", function(e){
-    (handler[e.data.evenname] || function () {})(e.data)
-})
+/* change progress after 1 second (only for showcase) */
+setTimeout(() => changeProgress(22), 1000);
+setTimeout(() => changeProgress(45), 2000);
+setTimeout(() => changeProgress(85), 4600);
+setTimeout(() => changeProgress(98), 5266);
+setTimeout(() => changeProgress(100), 8000);
