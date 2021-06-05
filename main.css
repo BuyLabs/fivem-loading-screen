@@ -30,8 +30,10 @@
 
 
 .progress-container .progress {
-  height: 100%;
+  height: 15%;
   width: 0;
+  bottom: 0;
+  top: 90%;
   border-radius: 0.4rem;
 
   background: #ff4754;
